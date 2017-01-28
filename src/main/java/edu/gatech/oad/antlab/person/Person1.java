@@ -31,7 +31,7 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 		String rotatedChars = input.substring(0, 2);
-		modifiedName = input.substring(2, input.length() -1) + rotatedChars;
+		String modifiedName = input.substring(2, input.length() -1) + rotatedChars;
 		return modifiedName;
 	}
 	
