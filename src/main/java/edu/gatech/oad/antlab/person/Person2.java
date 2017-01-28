@@ -46,7 +46,7 @@ public class Person2 {
         for(int i = 0; i < in.length; i++) {
             if(i != index) {
                 temp2[j] = in[i];
-                j++
+                j++;
             }
         }
         in = temp2;

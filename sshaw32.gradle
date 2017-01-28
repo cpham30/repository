@@ -1,0 +1,25 @@
+
+//The following tasks are supported: compileJava, compileTest, javadoc, clean, jar
+//Jar is set to default if using the following command in terminal: gradle -b sshaw32.gradle
+//Otherwise, use gradle -b sshaw32.gradle task
+
+apply plugin: 'java' 
+
+defaultTasks 'jar'
+
+jar {
+	manifest {
+		attributes 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain' , 'Class-Path' : '../../lib/resources.jar'
+	}
+}
+
+
+dependencies {
+    compile files('lib/resources.jar')
+}
+
+
+
+
+
+
